@@ -224,10 +224,13 @@
     
 }
 
-/* mobile */
-@media screen and (max-width: 992px){
-    /* Devo inserire la foto al posto del video e poi aggiustare l'altezza a 100vh */
+.bg-hero {
     
-}
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 
+}
 
