@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family:'Ubuntu', sans-serif;
+}
+.h1 {
+    font-family: 'Ubuntu Mono', monospace;;
+}
+
+.my-bg-color {
+    background-color:#F1CED4;
+
+}
+.my-color {
+    color: #F1CED4;
+}
+.second-color {
+    color: #EBAAB0;
+}
+.green-color {
+    color:#A0E7E5;
+}
+.second-bg-color {
+    background-color: #EBAAB0;
+}
+.bg-green {
+    background-color: #A0E7E5;
+}
+.bg-red {
+    background-color: #FFAEBC;
+}
+.bg-black {
+    background-color: black;
+}
+
+.video-section {
+    position: relative;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100% !important;
+}
+
+
+
+.my-category {
+    border-style: dashed;
+    border-color: #FFAEBC;
+    transition: 0.5s;
+    outline: #FFAEBF solid 2px;
+
+}
+.my-category:hover {
+    background-color: #FFAEBC;
+    color: white;
+    cursor: pointer;
+}
+.my-category:hover .my-color{
+    color:white !important;
+}
+.parallax-1 {
+    height: 600px;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/2512387/pexels-photo-2512387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+.parallax-1 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-1 .blur {
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.my-b:hover{
+    background-color:#F1CED4;
+    transition: 0.5s;
+    border-color: #FFAEBF !important;
+}
+.my-annunciCards {
+    outline: #FFAEBF;
+    position: relative;
+    transition: all case .255s;
+    max-width: 350px;
+
+
+}
+.my-annunciCards:hover {
+    outline: #FFAEBF solid 4px;
+    transition: 0.3s;
+}
+.my-annunciCards .carousel {
+    border-radius: 6px;
+    overflow: hidden;
+    border-bottom: solid 2px;
+    max-height: 200px;
+
+}
+.my-annunciCards .card-footer {
+    border-style: dashed;
+    border-color: #FFAEBF;
+    border-bottom: none;
+    border-left:none ;
+    border-right: none;
+    max-height: 30px;
+    background-color: #F1CED4;
+}
+.my-annunciCards .col-6:first-child {
+    border-right: dashed 1px  #FFAEBF;
+}
+.my-annunciCards .badge { 
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+
+}
+.parallax-2 {
+    min-height: 900px;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    outline: #F1CED4 solid 16px;
+
+}
+.parallax-3 {
+    min-height: 900px;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    outline: #F1CED4 solid 16px;
+}
+.lastSection {
+    background-image: url(https://images.pexels.com/photos/754898/pexels-photo-754898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    position: relative;
+    outline: #F1CED4 solid 16px;
+    background-attachment: fixed;
+
+}
+.lastSection .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+    align-items:start;
+    justify-content:start;
+}
+.lastSection .blur {
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+}
+
+
+/* Media screen per video */
+@media (min-aspect-ratio:16/9){
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+} 
+@media (max-aspect-ratio:16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+} 
+
+
+/* Media screen searchbar */
+
+/* desktop */
+@media screen and (min-width:992px) {
+    #searchbar.scrolled {
+        position: fixed;
+        top: 52px;
+        left:0;
+        right: 0;
+        z-index: 2;
+    }
+    
+}
+
+/* mobile */
+@media screen and (max-width: 992px){
+    /* Devo inserire la foto al posto del video e poi aggiustare l'altezza a 100vh */
+    
+}
+
+

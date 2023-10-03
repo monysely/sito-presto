@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progetto Presto.it </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Sezione NavBar -->
+  <section class="mb-5">
+    <nav class="navbar fixed-top navbar-expand-lg my-bg-color shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-fan"></i> Pinko.it </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active pe-5" href="./index.html"><i class="fa-solid fa-house-chimney-window"></i> HOME
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-5" href="./annunci.html"><i class="fa-solid fa-book-open-reader"></i> ANNUNCI</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pe-5" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa-solid fa-list-ul"></i> CATEGORIE</a>
+              
+              <div id="dropdownMenu" class="dropdown-menu second-bg-color">
+                
+            <!--  -->
+                </div>
+              </li>
+              <li class="nav-item">
+                
+                <button class="btn my-b second-bg-color" type="submit">
+                  Inserisci Annuncio
+                </button>
+              </li>
+        
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+    </section>
+
+    <!-- Header -->
+    <header class="bg-green">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="h1 mt-5 second-color">
+                        Cerca tra gli annunci 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    
+   <!-- Searchbar -->
+    <div id="searchbar" class="card shadow-none my-bg-color">
+    <div class="card-body">
+      <form id="searchForm">
+        <div class="row">
+          <div class="col-12 col-md-3 mb-3 mb-md-0">
+            <input id="searchInput" type="text" placeholder="Cerca annunci..." class="form-control form-control-lg">
+          </div>
+          <div class="col-12 col-md-3 mb-3 mb-md-0">
+            <select id="categorySelect" class="form-control form-control-lg" >
+              <option value="" selected >Seleziona categoria</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-3 mb-3 mb-md-0">
+           <div class="row">
+            <div class="col-6">
+                <input id="priceMinInput" type="text" placeholder="Min" class="form-control form-control-lg">
+            </div>
+            <div class="col-6">
+                <input id="priceMaxInput" type="text" placeholder="Max" class="form-control form-control-lg">
+            </div>
+           </div>
+          </div>
+          
+          <div class="col-12 col-md-3 mb-3 mb-md-0 d-grid">
+            <button type="submit" class="btn second-bg-color my-b btn-lg">Cerca</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    </div>
+
+    <!-- Searchbar replacer -->
+    <div id="searchbarReplacer" class="d-none">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3 mb-md-0 d-grid">
+          <button type="button" class="btn second-bg-color my-b btn-lg">Cerca</button>
+        </div>
+      </div>
+    </div>
+
+  
+ 
+
+  <!-- Ultimi Annunci -->
+  <section class="py-5 parallax-3">
+    <div class="container ">
+      <div class="content">
+        
+        <div id="announcementsRow" class="row">
+         <!--  -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Last Section -->
+  
+  <section class="lastSection">
+    <div class="blur"></div>
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pt-5">
+            <p class="h1 fst-italic second-color">
+              Pinko.it
+            </p>
+            <p class="h4  my-color fst-italic pt-2 ">
+              Trova i migliori affari nella tua città
+            </p>
+            <a href="/annunci.html" class="btn btn-lg my-b second-bg-color text-center mt-3">
+              Scopri i nostri annunci</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p class="h3 mb-5 second-color">Get in touch</p>
+            <p class="text-light">123 Street, New York, USA</p>
+            <p class="text-light">+012 345 6789</p>
+            <p class="text-light">info@example.com</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="h3 mb-5 second-color">Quick Links</p>
+            <p><a href="#" class="text-light">About us</a></p>
+            <p><a href="#" class="text-light">Contact us</a></p>
+            <p><a href="#" class="text-light">FAQ</a></p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="h3 mb-5 second-color">Newsletter</p>
+            <p class=" mb-3 text-light">Iscriviti alla nostra Newsletter!</p>
+            <!-- Newsletter -->
+            <form id="newsletterForm">
+              <div class="input-group">
+                <input id="newsletterInput" type="text" class="form-control form-control-lg" placeholder="Email"/>
+                <button class="btn second-bg-color my-b" type="submit">Iscriviti</button>
+              </div>
+              <div id="invalidNewsletterFeedback" class="invalid-feedback">
+                <!--  -->
+              </div>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+
+    </footer>
+  
+  
+  
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>  
+  <script src="newsletterForm.js"></script>
+  <script src="announcements.js"></script>
+  <script src="form.js"></script>
+  <script src="category.js"></script>
+  <script src="annunci.js"></script>
+</body>
+</html>
